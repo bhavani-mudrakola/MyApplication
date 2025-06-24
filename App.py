@@ -11,6 +11,6 @@ def register():
     student_id = request.form['student_id']
     email = request.form['email']
     year = request.form['year']
-    return render_template('successful.html', name=name, student=student_id, year=year)
+    return render_template('successful.html', name=name, year=year)
 if __name__ == '__main__':
     app.run(debug=True)
